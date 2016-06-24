@@ -4,10 +4,13 @@ compile '/**/*.html' do
   layout '/default.*'
 end
 
-# This is an example rule that matches Markdown (.md) files, and filters them
-# using the :kramdown filter. It is commented out by default, because kramdown
-# is not bundled with Nanoc or Ruby.
-#
+# The index is a redirect to the Kosmos page.
+compile '/index.md' do
+  filter :kramdown
+  layout '/index.*'
+end
+
+# Compile markdown files.
 compile '/**/*.md' do
   filter :kramdown
   layout '/default.*'
@@ -17,6 +20,8 @@ route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
   else
+    # vb: kosmos.md -> /kosmos/index.html
+    # (Browser toont dit mooi als https://theatervolta.be/kosmos/ )
     item.identifier.without_ext + '/index.html'
   end
 end

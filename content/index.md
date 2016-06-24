@@ -1,6 +1,5 @@
 ---
-title: Woops
+title: Omleiding
 ---
 
-You should set up a redirect from `/index.html` to `/kosmos.html`.
-Thanks.
+Deze pagina zou moeten omleiden naar de [kosmos](./kosmos/) pagina.
