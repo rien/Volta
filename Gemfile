@@ -10,3 +10,5 @@ gem 'guard-nanoc'
 # Write posts using markdown
 gem 'kramdown'
 
+# Relativize
+gem 'nokogiri'
