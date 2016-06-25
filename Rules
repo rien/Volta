@@ -4,13 +4,6 @@ compile '/**/*.html' do
   layout '/default.*'
 end
 
-# The index is a redirect to the Kosmos page.
-compile '/index.md' do
-  filter :kramdown
-  layout '/index.*'
-  filter :relativize_paths, type: :html
-end
-
 # Compile markdown files.
 compile '/**/*.md' do
   filter :kramdown

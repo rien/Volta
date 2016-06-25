@@ -7,6 +7,9 @@
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <%=if @item[:title] == "Omleiding"
+        "<meta http-equiv='refresh' content='3; url=kosmos'>"
+        end %>
   </head>
   <body>
     <div id="main">
