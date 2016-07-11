@@ -11,6 +11,12 @@ compile '/**/*.md' do
   filter :relativize_paths, type: :html
 end
 
+# Compile sass
+compile '/**/*.scss' do
+  filter :sass, syntax: :scss
+  write "#{item.identifier.without_ext}.css"
+end
+
 route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'

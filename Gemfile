@@ -12,3 +12,7 @@ gem 'kramdown'
 
 # Relativize
 gem 'nokogiri'
+
+# Use SASS for style
+gem 'sass'
+
