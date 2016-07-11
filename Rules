@@ -31,4 +31,7 @@ compile '/**/*' do
   write item.identifier.to_s
 end
 
+# Images can be copied as-is
+passthrough '/img/*.{png,jpg}'
+
 layout '/**/*', :erb

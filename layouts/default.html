@@ -28,7 +28,7 @@
 				</div>
 		</div>
     <% if @item[:image] %>
-      <img src=#{@item[:image} alt="">
+      <%= "<img src=#{@item[:image]} alt=''>" %>
     <% end %>
     <div id="main">
       <%= yield %>
