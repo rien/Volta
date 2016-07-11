@@ -1,2 +1,36 @@
-p {
+// SCSS-syntax: http://sass-lang.com/guide
+
+$bg-color: #EFEBE9;
+$white: #FFF;
+
+.header {
+	.home-menu {
+		z-index: 2;
+		background-color: $bg-color;
+		text-align: center;
+		box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+		.pure-menu-list{
+			display: block;
+			@media (min-width: 600px) {
+				text-align: right;
+			}
+		}
+	}
+}
+.header-image{
+	z-index: 0;
+	position: fixed !important;
+	width: 100%;
+}
+
+
+.content-wrapper {
+	z-index: 1;
+	position: absolute;
+	top: 70vw;
+	width: 100%;
+
+	.content {
+		background-color: $white;
+	}
 }

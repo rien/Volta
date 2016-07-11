@@ -8,30 +8,32 @@
 
     <title><%= @item[:title] %></title>
 
-		<!-- stylesheets -->
+    <!-- stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="/css/stylesheet.css">
 
-		<!--redirect to another page-->
+    <!--redirect to another page-->
     <% if @item[:redirect] %>
-      <meta http-equiv='refresh' content="3; url=#{@item[:redirect]}">
+    <%= "<meta http-equiv='refresh' content='3; url=#{@item[:redirect]}'>" %>
     <% end %>
   </head>
   <body>
-		<div class="header">
-				<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-						<ul class="pure-menu-list">
-								<li class="pure-menu-item"><a href="/kosmos/" class="pure-menu-link">Kosmos</a></li>
-								<li class="pure-menu-item"><a href="/volta/" class="pure-menu-link">Theater Volta</a></li>
-						</ul>
-				</div>
-		</div>
-    <% if @item[:image] %>
-      <%= "<img src=#{@item[:image]} alt=''>" %>
-    <% end %>
-    <div id="main">
-      <%= yield %>
+    <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="/kosmos/" class="pure-menu-link">Kosmos</a></li>
+          <li class="pure-menu-item"><a href="/volta/" class="pure-menu-link">Theater Volta</a></li>
+        </ul>
+      </div>
+      <% if @item[:image] %>
+      <%= "<img src=#{@item[:image]} alt='' class='header-image'>" %>
+      <% end %>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
