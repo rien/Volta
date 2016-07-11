@@ -15,7 +15,7 @@
 
 		<!--redirect to another page-->
     <% if @item[:redirect] %>
-      <meta http-equiv='refresh' content='3; url=#{@item[:redirect]}'>
+      <meta http-equiv='refresh' content="3; url=#{@item[:redirect]}">
     <% end %>
   </head>
   <body>
@@ -27,6 +27,9 @@
 						</ul>
 				</div>
 		</div>
+    <% if @item[:image] %>
+      <img src=#{@item[:image} alt="">
+    <% end %>
     <div id="main">
       <%= yield %>
     </div>

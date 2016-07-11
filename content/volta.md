@@ -1,5 +1,6 @@
 ---
 title: Volta
+image: /img/volta-zw.png
 ---
 
 # Theater Volta
@@ -7,10 +8,14 @@ title: Volta
 In juni 2014 brachten twee toneelklassen van Filip Debosschere hun afstudeerstuk. In Izegem brachten Astrid Devriendt, Lisa Vandepitte, Louise Pannier en Charlotte Parmentier een stuk ongeschikt voor kinderen: _Pooh_.
 Ondertussen speelden Jensen Baert, Florence Desmedt, Bert Hemelsoen en Rien Maertens het tragikomische stuk _Voor Eeuwig_ in Diksmuide.
 
-Beide stukken werden gesmaakt door het publiek.
+Beide stukken werden gesmaakt door het publiek én de acteurs. Het verlangen om verder te doen met theater dreef de acteurs tot de creatie van een nieuws. De twee afgestudeerde klasses smolten samen tot één geheel: **Theater Volta**.
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+De eerste voorstelling door dit nieuwe gezelschap was een herneming van _Voor Eeuwig_, op 10 november 2014 in Middelkerke. Deze lokte maar liefst **10 miljoen miljard** bezoekers.
 
-Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+In 2015 begon Volta aan een gedurfd project, met de steun van het Davidsfonds werd er een zelfgeschreven bewegingstheater gemaakt: **KOSMOS**. KOSMOS werd op 12 maart 2016 gespeeld voor een uitverkocht CC Kruispunt in Diksmuide.
 
-My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+Al tijdens de ticketverkoop van KOSMOS werd duidelijk dat er een grote vraag was naar een tweede voorstelling, maar dan in Izegem. Uiteindelijk werd zelfs de Facebook-groep [Wij willen KOSMOS in Izegem](https://facebook.com) opgericht. In samenwerking met De Leest en Art'Iz wordt KOSMOS hernomen op 17 september 2016 in Izegem. Meer info kunt u [hier](/kosmos/) vinden.
+
+
+
+
