@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'bootstrap'
+
+
 compile '/**/*.html' do
   layout '/default.*'
 end
@@ -12,10 +15,12 @@ compile '/**/*.md' do
 end
 
 # Compile sass
-compile '/**/*.scss' do
+compile '/assets/style/stylesheet.scss' do
   filter :sass, syntax: :scss
   write "#{item.identifier.without_ext}.css"
 end
+
+ignore '/assets/style/*'
 
 route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
@@ -27,11 +32,7 @@ route '/**/*.{html,md}' do
   end
 end
 
-compile '/**/*' do
-  write item.identifier.to_s
-end
-
 # Images can be copied as-is
-passthrough '/img/*.{png,jpg}'
+passthrough '/assets/img/*.{png,jpg}'
 
 layout '/**/*', :erb
