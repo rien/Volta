@@ -14,6 +14,9 @@ compile '/**/*.md' do
   filter :relativize_paths, type: :html
 end
 
+# js
+passthrough '/assets/js/*.{js}'
+
 # Compile sass
 compile '/assets/style/stylesheet.scss' do
   filter :sass, syntax: :scss

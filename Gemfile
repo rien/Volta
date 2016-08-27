@@ -2,10 +2,6 @@ source "https://rubygems.org"
 
 # Nanoc is a static site generator
 gem 'nanoc'
-gem 'adsf'
-
-# Guard: compile when changes are detected
-gem 'guard-nanoc'
 
 # Write posts using markdown
 gem 'kramdown'
@@ -17,3 +13,12 @@ gem 'nokogiri'
 gem 'sass'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 
+group :development do
+  # server
+  gem 'adsf'
+end
+
+group :nanoc do
+  # Guard: compile when changes are detected
+  gem 'guard-nanoc'
+end

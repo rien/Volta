@@ -88,3 +88,9 @@ checks:
     # E.g.:
     #   exclude_files: ['blog/page']
     exclude_files: []
+
+deploy:
+  default:
+    kind: rsync
+    dst: root@droplet:/srv/http/volta-beta
+    options: ['-aP', '--delete-after', '--chown=http:http', '--exclude={"*/.git/*","*/.git"}']
