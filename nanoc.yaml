@@ -93,4 +93,4 @@ deploy:
   default:
     kind: rsync
     dst: root@droplet:/srv/http/volta
-    options: ['-aP', '--delete-after', '--chown=http:http', '--exclude={"*/.git/*","*/.git"}']
+    options: ['-aP', '--delete-after', '--chown=http:http', '--cvs-exclude']
