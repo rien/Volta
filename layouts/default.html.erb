@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/7be66db6b9.js"></script>
+    <title><%= @item[:title] %> - Theater Volta</title>
+
+    <%# Redirect if neccesary %>
+    <% if @item[:redirect] %>
+      <meta http-equiv='refresh' content='3; url=<%= @item[:redirect] %>' />
+    <% end %>
+    <% (@item[:og] || []).each do |prop, cont| %>
+      <meta property="og:<%= prop %>" content="<%= cont %>" />
+    <% end %>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/style/stylesheet.css">
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

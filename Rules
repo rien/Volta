@@ -37,5 +37,6 @@ end
 
 # Images can be copied as-is
 passthrough '/assets/img/*.{png,jpg}'
+passthrough '/favicon.ico'
 
 layout '/**/*', :erb
