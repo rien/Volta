@@ -18,7 +18,7 @@ end
 passthrough '/assets/js/*.{js}'
 
 # Compile sass
-compile '/assets/style/stylesheet.scss' do
+compile '/assets/style/freelancer.scss' do
   filter :sass, syntax: :scss
   write "#{item.identifier.without_ext}.css"
 end

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
 
-    <title><%= @item[:title] %> - Theater Volta</title>
+    <title><%= @item[:title] %> - Volta</title>
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/7be66db6b9.js"></script>
@@ -18,8 +18,12 @@
     <% (@item[:og] || []).each do |prop, cont| %>
       <meta property="og:<%= prop %>" content="<%= cont %>" />
     <% end %>
+
     <!-- stylesheets -->
-    <link rel="stylesheet" href="/assets/style/stylesheet.css">
+    <% (@item[:stylesheets] || []).each do |stylesheet| %>
+      <link rel="stylesheet" href="/assets/style/<%= stylesheet %>.css">
+    <% end %>
+
   </head>
   <body>
     <%= yield %>
