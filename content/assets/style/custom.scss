@@ -74,17 +74,16 @@ header {
 section {
     padding: 70px 0;
 }
-section#about{
-    color: #fff;
-    background: #8c8c8c;
-}
-section#tickets{
+section.darker{
     hr.star-primary:after{
         background: $gray-lighter;
     }
     background: $gray-lighter;
 }
-
+section.darkerer{
+    color: #fff;
+    background: #8c8c8c;
+}
 section h2 {
     margin: 0;
     font-size: 3em;
