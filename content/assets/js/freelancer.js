@@ -26,7 +26,7 @@ $('a').click(function() {
 });
 
 $(window).scroll(function() {
-   var hT = $('#kosmos').offset().top,
+   var hT = $('section:first-of-type').offset().top,
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS + 40 > hT){
