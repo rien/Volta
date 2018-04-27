@@ -25,7 +25,7 @@ end
 
 ignore '/assets/style/*'
 
-route '/**/*.{html,md}' do
+route '/**/*.{html,html.erb,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
   else
@@ -39,4 +39,6 @@ end
 passthrough '/assets/img/*.{png,jpg}'
 passthrough '/favicon.ico'
 
-layout '/**/*', :erb
+# Layouts
+layout '/**/*.slim', :slim
+layout '/**/*.erb', :erb
