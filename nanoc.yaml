@@ -92,5 +92,5 @@ checks:
 deploy:
   default:
     kind: rsync
-    dst: root@droplet:/srv/http/volta
-    options: ['-aP', '--delete-after', '--chown=http:http', '--cvs-exclude']
+    dst: root@g:/srv/http/volta
+    options: ['-aP', '--delete-after', '--cvs-exclude']
