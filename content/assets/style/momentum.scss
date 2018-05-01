@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url('/assets/fonts/AvenirNext-Regular.woff2') format('woff2'),
+       url('/assets/fonts/AvenirNext-Regular.woff') format('woff'),
+       url('/assets/fonts/AvenirNext-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url('/assets/fonts/AvenirNext-Bold.woff2') format('woff2'),
+       url('/assets/fonts/AvenirNext-Bold.woff') format('woff'),
+       url('/assets/fonts/AvenirNext-Bold.ttf') format('ttf');
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #000;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.momentum {
+  color: #FFF;
+  max-width: 50%;
+  text-align: center;
+  p {
+    margin: .2em 0;
+  }
+  .m {
+    margin: 1em 0;
+  }
+  .dag,.nov {
+    font-size: 4rem;
+    font-family: 'AvenirNext-Bold';
+  }
+}

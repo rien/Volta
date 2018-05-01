@@ -18,7 +18,7 @@ end
 passthrough '/assets/js/*.{js}'
 
 # Compile sass
-compile '/assets/style/freelancer.scss' do
+compile '/assets/style/{freelancer,momentum}.scss' do
   filter :sass, syntax: :scss
   write "#{item.identifier.without_ext}.css"
 end
@@ -36,7 +36,8 @@ route '/**/*.{html,html.erb,md}' do
 end
 
 # Images can be copied as-is
-passthrough '/assets/img/*.{png,jpg}'
+passthrough '/assets/img/*.{png,jpg,svg}'
+passthrough '/assets/fonts/*.{ttf,woff,woff2}'
 passthrough '/favicon.ico'
 
 # Layouts
