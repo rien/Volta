@@ -7,6 +7,12 @@ compile '/**/*.html' do
   layout '/default.*'
 end
 
+compile '/**/*.slim' do
+  filter :slim
+  layout '/default.*'
+  filter :relativize_paths, type: :html
+end
+
 # Compile markdown files.
 compile '/**/*.md' do
   filter :kramdown
@@ -25,7 +31,7 @@ end
 
 ignore '/assets/style/*'
 
-route '/**/*.{html,html.erb,md}' do
+route '/**/*.{html,html.erb,md,slim}' do
   if item.identifier =~ '/index.*'
     '/index.html'
   else

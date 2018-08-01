@@ -8,8 +8,10 @@
 
     <title><%= @item[:title] %> - Volta</title>
 
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/7be66db6b9.js"></script>
+    <% if @item[:fontawesome] %>
+      <!-- Font Awesome -->
+      <script src="https://use.fontawesome.com/7be66db6b9.js"></script>
+    <% end %>
 
     <%# Redirect if neccesary %>
     <% if @item[:redirect] %>

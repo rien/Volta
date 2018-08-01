@@ -3,6 +3,8 @@ source "https://rubygems.org"
 # Nanoc is a static site generator
 gem 'nanoc'
 
+gem 'slim'
+
 # Write posts using markdown
 gem 'kramdown'
 
