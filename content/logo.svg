@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="cm"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:zoom="0.84973165"
+     inkscape:cx="408.95264"
+     inkscape:cy="504.27685"
+     inkscape:window-width="1918"
+     inkscape:window-height="1078"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     width="1000px" />
+  <defs
+     id="defs2">
+    <rect
+       x="179.75976"
+       y="924.32493"
+       width="638.47569"
+       height="149.92551"
+       id="rect6289" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter3155"
+       x="-0.11220245"
+       y="-0.11118173"
+       width="1.2244049"
+       height="1.2223635">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood3145" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite3147" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur3149" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset3151" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite3153" />
+    </filter>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Background">
+    <rect
+       style="opacity:1;fill:#000000;stroke-width:1.00158"
+       id="rect2457"
+       width="100.15748%"
+       height="100.15748%"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Logo"
+     style="mix-blend-mode:normal">
+    <g
+       id="g27281">
+      <path
+         id="triangle-v"
+         style="opacity:0.9;fill:#ffffff;fill-rule:evenodd;stroke-width:4.70479"
+         inkscape:transform-center-y="29.765034"
+         d="m 43.805474,19.856738 44.243093,89.298552 44.243103,89.29854 44.24309,-89.29854 44.2431,-89.298552 h -17.09354 l -35.53812,69.879128 -33.1353,65.150394 -2.71923,5.36151 -0.009,0.009 L 96.411509,89.735866 60.873369,19.856735 Z"
+         inkscape:transform-center-x="-1.0191111e-06" />
+      <path
+         id="triangle-delta"
+         style="display:inline;opacity:0.9;fill:#ffffff;fill-rule:evenodd;stroke-width:0.284324;filter:url(#filter3155)"
+         inkscape:transform-center-y="-29.765035"
+         d="M 6.35,0.95343013 3.676261,6.3499999 1.002523,11.74657 H 6.35 11.697477 L 9.023739,6.3499999 Z m 0,2.30890297 1.892391,3.7269044 1.891874,3.7263875 H 6.35 2.565735 L 4.457609,6.9892375 Z"
+         transform="matrix(16.547279,0,0,16.547279,27.216442,4.0800596)"
+         inkscape:transform-center-x="-3.984755e-06" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.57752308,0,0,0.57752308,-58.976325,-340.4616)"
+       id="text6287"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:113.386px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';white-space:pre;shape-inside:url(#rect6289);fill:#ffffff;fill-opacity:1;stroke:none;opacity:0.9"><tspan
+         x="179.75977"
+         y="1026.8441"
+         id="tspan32505">VOLTA</tspan></text>
+  </g>
+</svg>

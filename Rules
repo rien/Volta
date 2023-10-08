@@ -1,14 +1,40 @@
 #!/usr/bin/env ruby
 
-compile '/**/*.html' do
+compile '/**/*.{html,erb}' do
+  filter :erb
+  filter :typogruby
+
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
-    write item.identifier.to_s
+    write item.identifier.without_ext + '.html'
   else
     write item.identifier.without_ext + '/index.html'
   end
 end
+
+compile '/images/logo.svg' do
+  write "/favicon.svg"
+end
+
+[2400, 1200, 600, 300, 150].product([:webp, :jpeg]).each \
+  do |width, format|
+    compile '/images/*.jpg', rep: "#{format}_#{width}".to_sym do
+    filter :convert_image, {
+      format: format,
+      width: width,
+    }
+    write item.identifier.without_ext + "-#{width}w.#{format}"
+  end
+end
+
+compile '/style/main.scss' do
+  opts = { syntax: :scss }
+  opts[:style] = :compressed if production?
+  filter :sassc, opts
+  write ext: 'css'
+end
+
 
 # This is an example rule that matches Markdown (.md) files, and filters them
 # using the :kramdown filter. It is commented out by default, because kramdown

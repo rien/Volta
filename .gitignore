@@ -11,3 +11,4 @@ crash.log
 
 # SASS Cashe
 .sass-cache/
+node_modules/

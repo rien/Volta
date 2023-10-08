@@ -1,0 +1,10 @@
+@import "node_modules/tachyons-sass/tachyons.scss";
+@import "node_modules/@fontsource-variable/bitter/index.css";
+
+body {
+  font-family: 'Bitter Variable', sans-serif;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

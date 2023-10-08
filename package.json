@@ -1,0 +1,14 @@
+{
+  "name": "theatervolta.be",
+  "version": "1.0.0",
+  "description": "Source code of theatervolta.be",
+  "main": "content/stylesheets/main.css",
+  "repository": "git@github.com:rien/Volta.git",
+  "author": "Rien Maertens <rien.maertens@posteo.be>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fontsource-variable/bitter": "^5.0.14",
+    "tachyons-sass": "^4.9.5"
+  }
+}

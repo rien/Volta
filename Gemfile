@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'nanoc'
+gem 'nanoc', path: "/home/rien/repos/nanoc"
 
 gem 'sassc'
 gem 'typogruby'
 gem 'kramdown'
+gem 'rmagick'
 
 group :development do
   gem 'adsf'

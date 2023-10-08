@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      <% if @item[:title] %>
+        Volta | <%= @item[:title]  %>
+      <% else %>
+        Volta Projects
+      <% end %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body class="w-100 bg-black white">
+    <% if false %>
+      <header class="fixed pa3 outline w-100 bg-black">
+        <nav class="flex justify-around">
+          <div>
+          <a class="white dim ttu" href="/">Volta</a>
+          </div>
+          <div>
+          <a class="white dim ttu" href="/repertoire/">Repertoire</a>
+          </div>
+          <div>
+          <a class="white dim ttu" href="/wie-is-volta/">wieda?</a>
+          </div>
+        </nav>
+      </header>
+    <% end %>
+      <main class="w-100">
+        <%= yield %>
+      </main>
+  </body>
+</html>

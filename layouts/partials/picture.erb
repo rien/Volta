@@ -1,0 +1,11 @@
+<picture class="w-100">
+  <% @items[@image].reps.each do |rep| %>
+    <% next if rep.name == :default %>
+    <% fmt, width = rep.name.to_s.split('_')
+       width = width.to_i
+       minwidth = ((width / 2) * @factor).round
+    %>
+  <source srcset="<%= rep.path %>" type="image/<%= fmt %>" media="(min-width: <%= minwidth %>px)">
+  <% end %>
+  <img src="<%= @items[@image].reps[:jpeg_150].path %>" alt="<%= @alt %>"/>
+</picture>
