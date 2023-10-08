@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <title>
@@ -14,6 +14,9 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <% item[:og]&.each do |property, content| %>
+      <meta property="og:<%= property %>" content="<%= content %>" />
+    <% end %>
   </head>
   <body class="w-100 bg-black white">
     <% if false %>
