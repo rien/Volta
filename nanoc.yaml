@@ -14,7 +14,7 @@ data_sources:
 deploy:
   default:
     kind: rsync
-    dst:  webhost@space.rxn.be:/srv/webhost/volta-tryout
+    dst:  webhost@space.rxn.be:/srv/webhost/volta
     options: [ '-glpPrtvz', '-e', 'ssh -p 9450', '--delete']
   git:
     kind: git
