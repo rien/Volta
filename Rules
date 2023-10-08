@@ -19,7 +19,7 @@ end
 
 [2400, 1200, 600, 300, 150].product([:webp, :jpeg]).each \
   do |width, format|
-    compile '/images/*.jpg', rep: "#{format}_#{width}".to_sym do
+    compile '/images/*.{jpg,png}', rep: "#{format}_#{width}".to_sym do
     filter :convert_image, {
       format: format,
       width: width,
